@@ -1,0 +1,8 @@
+yum install ansible -y
+useradd ansibleuser
+passwd ansibleuser
+vi /etc/ssh/sshd.config
+visudo
+su - ansibleuser
+ssh-keygen
+ssh-copy-id ipaddresss
